@@ -2,12 +2,6 @@
   <header v-if="showHero" class="home-hero flex">
     <div class="mx-auto grid lg:grid-cols-[minmax(400px,600px),minmax(500px,800px)] gap-4">
       <div class="my-auto pb-40 <md:pb-20">
-        <p align="center">
-          <a href="https://github.com/slidevjs/slidev">
-            <img src="/logo-title.png" alt="Slidev" height="300" />
-          </a>
-          <br />
-        </p>
         <div class="description !-mt-4">
           Presentation
           <b>Sli</b>des for
@@ -47,34 +41,12 @@
           </p>
         </ClientOnly>
       </div>
-      <ClientOnly>
-        <Demo class="-mt-10 -mb-25" />
-      </ClientOnly>
+      <ClientOnly/>
     </div>
   </header>
 </template>
 
-<script setup lang="ts">
-import { computed } from 'vue'
-import { useFrontmatter } from 'vitepress'
-import { isDark } from '../composables/dark'
-import NavLink from './NavLink.vue'
-
-const data = useFrontmatter()
-
-const hasHeroText = computed(() => data.value.heroText !== null)
-const hasTagline = computed(() => data.value.tagline !== null)
-
-const hasAction = computed(() => data.value.actionLink && data.value.actionText)
-const hasAltAction = computed(() => data.value.altActionLink && data.value.altActionText)
-
-const showHero = computed(() => {
-  return data.value.heroImage
-    || hasHeroText.value
-    || hasTagline.value
-    || hasAction.value
-})
-</script>
+<script setup lang="ts"/>
 
 <style scoped lang="postcss">
 .home-hero {

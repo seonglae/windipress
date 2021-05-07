@@ -10,7 +10,6 @@ When working with WYSIWYG editors, it is easy to get distracted by the styling o
 
 ## Slidev
 
-![](/screenshots/cover.png)
 
 Here are a few of the coolest features of Slidev:
 

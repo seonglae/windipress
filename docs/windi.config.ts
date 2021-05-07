@@ -5,10 +5,7 @@ export default defineConfig({
   extract: {
     include: [
       '**/*.{md,vue}',
-      '.vitepress/**/*.{ts,md,vue}',
-      '../packages/client/internals/SlideContainer.vue',
-      '../packages/client/layouts/*.vue',
-      '../packages/@theme-default/layouts/*.vue',
+      '.vitepress/**/*.{ts,md,vue}' 
     ],
   },
   attributify: true,

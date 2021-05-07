@@ -3,7 +3,10 @@
     "module": "ESNext",
     "baseUrl": ".",
     "target": "es2016",
-    "lib": ["DOM", "ESNext"],
+    "lib": [
+      "DOM",
+      "ESNext"
+    ],
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
@@ -15,21 +18,15 @@
     "types": [
       "vite/client",
       "node",
-      "jest"
-    ],
-    "paths": {
-      "@slidev/client/*": ["./packages/client/*"],
-      "@slidev/types": ["./packages/types/src/index.ts"],
-      "@slidev/parser": ["packages/parser/src/index.ts"],
-      "@slidev/parser/*": ["packages/parser/src/*"]
-    }
+    ]
   },
   "include": [
     "./*.ts",
     "./docs/.vitepress/**/*.ts",
-    "./docs/.vitepress/**/*.vue",
-    "./packages/**/*.ts",
-    "./packages/**/*.vue"
+    "./docs/.vitepress/**/*.vue"
   ],
-  "exclude": ["**/dist/**", "node_modules"]
+  "exclude": [
+    "**/dist/**",
+    "node_modules"
+  ]
 }
