@@ -1,9 +1,9 @@
 {
-  "private": true,
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "node": ">=14.0.0"
   },
+  "license": "MIT",
   "scripts": {
     "docs": "vitepress dev docs",
     "docs:build": "esno ./scripts/docs.ts"
@@ -17,9 +17,11 @@
     "pnpm": "^6.2.5",
     "prism-theme-vars": "^0.2.2",
     "typescript": "^4.2.4",
+    "vite": "^2.2.4",
     "vite-plugin-components": "^0.9.0",
     "vite-plugin-icons": "^0.5.0",
     "vite-plugin-windicss": "^0.16.0-beta.14",
-    "vitepress": "^0.13.2"
+    "vitepress": "^0.13.2",
+    "vue-demi": "^0.9.0"
   }
 }

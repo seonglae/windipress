@@ -39,74 +39,11 @@ const Guide = [
   },
 ]
 
-const Theme = [
-  {
-    text: 'Use Theme',
-    link: '/themes/use',
-  },
-  {
-    text: 'Theme Gallery',
-    link: '/themes/gallery',
-  },
-  {
-    text: 'Write a Theme',
-    link: '/themes/write-a-theme',
-  },
-]
-
-const Customizations = [
-  {
-    text: 'Customizations',
-    link: '/custom/',
-  },
-  {
-    text: 'Directory Structure',
-    link: '/custom/directory-structure',
-  },
-  {
-    text: 'Highlighters',
-    link: '/custom/highlighters',
-  },
-  {
-    text: 'Configure Vite',
-    link: '/custom/config-vite',
-  },
-  {
-    text: 'Configure Windi CSS',
-    link: '/custom/config-windicss',
-  },
-  {
-    text: 'Configure Monaco',
-    link: '/custom/config-monaco',
-  },
-]
-
 const slidebars = [
   {
     text: 'Guide',
     children: Guide,
-  },
-  {
-    text: 'Themes',
-    children: Theme,
-  },
-  {
-    text: 'Customizations',
-    children: Customizations,
-  },
-  {
-    text: 'Built-in',
-    children: [
-      {
-        text: 'Components',
-        link: '/builtin/components',
-      },
-      {
-        text: 'Layouts',
-        link: '/builtin/layouts',
-      },
-    ],
-  },
+  }
 ]
 
 /**
@@ -140,14 +77,6 @@ module.exports = {
       {
         text: 'Guide',
         items: Guide,
-      },
-      {
-        text: 'Theme',
-        items: Theme,
-      },
-      {
-        text: 'Customize',
-        items: Customizations,
       },
       { text: 'Showcases', link: '/showcases' },
     ],
