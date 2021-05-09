@@ -1,12 +1,12 @@
 <template>
   <header v-if="showHero" class="home-hero flex">
-    <div class="mx-auto grid lg:grid-cols-[minmax(400px,600px),minmax(500px,800px)] gap-4">
+    <div class="mx-auto grid lg:grid-cols-12] gap-4">
       <div class="my-auto pb-40 <md:pb-20">
-        <div class="description !-mt-4">
-          Presentation
-          <b>Sli</b>des for
-          <b>Dev</b>elopers
-          <sup class="opacity-50">Beta</sup>
+      <h1>
+          Vitepress Template
+        </h1>
+        <div class="description">
+          Description of this page
         </div>
 
         <NavLink
@@ -25,28 +25,38 @@
 
         <div class="mt-5 flex">
           <div class="mx-auto">
-            <p>or try it now</p>
             <div class="language-bash mt-2">
               <pre><code><span class="opacity-50">$ </span><span class="token function">npm init</span> <span class="token text-[#408c9e] font-500">slidev</span></code></pre>
             </div>
           </div>
         </div>
-
-        <ClientOnly>
-          <p align="center" m="t-6">
-            <a href="https://www.producthunt.com/posts/slidev?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-slidev" target="_blank">
-              <img v-if="isDark" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=294908&theme=dark" alt="Slidev - Presentation Slides for Developers | Product Hunt" width="200" />
-              <img v-else src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=294908" alt="Slidev - Presentation Slides for Developers | Product Hunt" width="200" />
-            </a>
-          </p>
-        </ClientOnly>
       </div>
-      <ClientOnly/>
     </div>
   </header>
 </template>
 
-<script setup lang="ts"/>
+<script setup lang="ts">
+import { computed } from 'vue'
+import { useFrontmatter } from 'vitepress'
+import { isDark } from '../composables/dark'
+import NavLink from './NavLink.vue'
+
+const data = useFrontmatter()
+
+const hasHeroText = computed(() => data.value.heroText !== null)
+const hasTagline = computed(() => data.value.tagline !== null)
+
+const hasAction = computed(() => data.value.actionLink && data.value.actionText)
+const hasAltAction = computed(() => data.value.altActionLink && data.value.altActionText)
+
+const showHero = computed(() => {
+  return data.value.heroImage
+    || hasHeroText.value
+    || hasTagline.value
+    || hasAction.value
+})
+</script>
+
 
 <style scoped lang="postcss">
 .home-hero {

@@ -15,7 +15,7 @@ interface HeaderWithChildren extends Header {
 
 export const SideBarLink: FunctionalComponent<{
   item: DefaultTheme.SideBarItem
-}> = (props) => {
+}> = (props: any) => {
   const route = useRoute()
   const site = useSiteData()
 
