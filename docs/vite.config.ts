@@ -1,5 +1,5 @@
 import { resolve } from 'path'
-import { UserConfig } from 'vite'
+import type { UserConfig } from 'vite'
 import Icons, { ViteIconsResolver } from 'vite-plugin-icons'
 import Components from 'vite-plugin-components'
 import WindiCSS from 'vite-plugin-windicss'

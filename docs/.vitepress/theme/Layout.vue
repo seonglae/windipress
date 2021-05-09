@@ -46,12 +46,6 @@
       </template>
     </Page>
   </div>
-
-  <!-- <Debug /> -->
-
-  <ClientOnly>
-    <WorkingInProgress />
-  </ClientOnly>
 </template>
 
 <script setup lang="ts">

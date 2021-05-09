@@ -16,8 +16,7 @@
     "strictNullChecks": true,
     "forceConsistentCasingInFileNames": true,
     "types": [
-      "vite/client",
-      "node",
+      "node"
     ]
   },
   "include": [
