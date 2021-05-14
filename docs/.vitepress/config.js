@@ -51,7 +51,7 @@ module.exports = {
     ]
   ],
   themeConfig: {
-    repo: 'seonglae/vitepress-template',
+    repo: 'seonglae/windipress',
     logo: '/logo.svg',
     docsDir: 'docs',
     docsBranch: 'release',
