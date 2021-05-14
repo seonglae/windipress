@@ -2,7 +2,7 @@
   <header v-if="showHero" class="home-hero flex">
     <div class="mx-auto grid lg:grid-cols-12] gap-4">
       <div class="my-auto pb-40 <md:pb-20">
-        <h1>Vitepress Template</h1>
+        <h1>Vitepress WindiCSS Template</h1>
         <div class="description">Description of this page</div>
 
         <NavLink
