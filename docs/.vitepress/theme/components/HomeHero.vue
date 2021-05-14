@@ -2,12 +2,8 @@
   <header v-if="showHero" class="home-hero flex">
     <div class="mx-auto grid lg:grid-cols-12] gap-4">
       <div class="my-auto pb-40 <md:pb-20">
-      <h1>
-          Vitepress Template
-        </h1>
-        <div class="description">
-          Description of this page
-        </div>
+        <h1>Vitepress Template</h1>
+        <div class="description">Description of this page</div>
 
         <NavLink
           v-if="hasAction"
@@ -22,14 +18,6 @@
           class="action alt mx-2"
           rounded="tr-2xl tl-3xl br-4xl bl-4xl"
         />
-
-        <div class="mt-5 flex">
-          <div class="mx-auto">
-            <div class="language-bash mt-2">
-              <pre><code><span class="opacity-50">$ </span><span class="token function">npm init</span> <span class="token text-[#408c9e] font-500">slidev</span></code></pre>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </header>
@@ -47,16 +35,19 @@ const hasHeroText = computed(() => data.value.heroText !== null)
 const hasTagline = computed(() => data.value.tagline !== null)
 
 const hasAction = computed(() => data.value.actionLink && data.value.actionText)
-const hasAltAction = computed(() => data.value.altActionLink && data.value.altActionText)
+const hasAltAction = computed(
+  () => data.value.altActionLink && data.value.altActionText
+)
 
 const showHero = computed(() => {
-  return data.value.heroImage
-    || hasHeroText.value
-    || hasTagline.value
-    || hasAction.value
+  return (
+    data.value.heroImage ||
+    hasHeroText.value ||
+    hasTagline.value ||
+    hasAction.value
+  )
 })
 </script>
-
 
 <style scoped lang="postcss">
 .home-hero {
