@@ -42,11 +42,6 @@ export function joinUrl(base: string, path: string): string {
   return base + path
 }
 
-/**
- * get the path without filename (the last segment). for example, if the given
- * path is `/guide/getting-started.html`, this method will return `/guide/`.
- * Always with a trailing slash.
- */
 export function getPathDirName(path: string): string {
   const segments = path.split('/')
 

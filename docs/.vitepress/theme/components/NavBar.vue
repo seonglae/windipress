@@ -12,7 +12,7 @@
 
     <div class="nav-icons">
       <div class="item mr-2">
-        <a class="nav-btn" href="https://twitter.com/Slidevjs" target="_blank" aria-label="Twitter">
+        <a class="nav-btn" href="https://twitter.com/SeonglaeC" target="_blank" aria-label="Twitter">
           <mdi-twitter />
         </a>
       </div>

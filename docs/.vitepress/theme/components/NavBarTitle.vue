@@ -11,7 +11,7 @@
       alt="Logo"
     >
     <span class="title text-primary-deep">
-      <span class="font-600">Sli</span><span class="font-normal">dev</span>
+      <span class="font-600">Windi</span><span class="font-normal">press</span>
     </span>
   </a>
 </template>
