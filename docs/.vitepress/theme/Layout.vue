@@ -2,7 +2,11 @@
   <div class="theme" :class="pageClasses">
     <NavBar
       v-if="showNavbar"
-      :class="isHome ? '!border-transparent !bg-opacity-50 !md:bg-transparent <md:(backdrop-filter backdrop-blur)' : ''"
+      :class="
+        isHome
+          ? '!border-transparent !bg-opacity-50 !md:bg-transparent <md:(backdrop-filter backdrop-blur)'
+          : ''
+      "
       @toggle="toggleSidebar"
     >
       <template #search>
@@ -50,11 +54,7 @@
 
 <script setup lang="ts">
 import { ref, computed, watch, defineAsyncComponent } from 'vue'
-import {
-  useRoute,
-  useSiteData,
-  useSiteDataByRoute,
-} from 'vitepress'
+import { useRoute, useSiteData, useSiteDataByRoute } from 'vitepress'
 import type { DefaultTheme } from './config'
 
 // components
@@ -70,7 +70,7 @@ const siteRouteData = useSiteDataByRoute()
 const theme = computed(() => siteData.value.themeConfig)
 
 const AlgoliaSearchBox = defineAsyncComponent(
-  () => import('./components/AlgoliaSearchBox.vue'),
+  () => import('./components/AlgoliaSearchBox.vue')
 )
 
 // custom layout
@@ -82,18 +82,19 @@ const enableHome = computed(() => !!route.data.frontmatter.home)
 const showNavbar = computed(() => {
   const { themeConfig } = siteRouteData.value
   const { frontmatter } = route.data
-  if (frontmatter.navbar === false || themeConfig.navbar === false)
-    return false
+  if (frontmatter.navbar === false || themeConfig.navbar === false) return false
 
   return (
-    siteData.value.title
-    || themeConfig.logo
-    || themeConfig.repo
-    || themeConfig.nav
+    siteData.value.title ||
+    themeConfig.logo ||
+    themeConfig.repo ||
+    themeConfig.nav
   )
 })
 
-const isHome = computed(() => route.path === '/' || route.path === '/index.html')
+const isHome = computed(
+  () => route.path === '/' || route.path === '/index.html'
+)
 
 // sidebar
 const openSideBar = ref(false)
@@ -102,11 +103,11 @@ const showSidebar = computed(() => {
   const { frontmatter } = route.data
   const { themeConfig } = siteRouteData.value
   return (
-    !frontmatter.home
-    && frontmatter.sidebar !== false
-    && ((typeof themeConfig.sidebar === 'object'
-      && Object.keys(themeConfig.sidebar).length !== 0)
-      || (Array.isArray(themeConfig.sidebar) && themeConfig.sidebar.length !== 0))
+    !frontmatter.home &&
+    frontmatter.sidebar !== false &&
+    ((typeof themeConfig.sidebar === 'object' &&
+      Object.keys(themeConfig.sidebar).length !== 0) ||
+      (Array.isArray(themeConfig.sidebar) && themeConfig.sidebar.length !== 0))
   )
 })
 
@@ -126,8 +127,16 @@ const pageClasses = computed(() => {
     {
       'no-navbar': !showNavbar.value,
       'sidebar-open': openSideBar.value,
-      'no-sidebar': !showSidebar.value,
-    },
+      'no-sidebar': !showSidebar.value
+    }
   ]
 })
 </script>
+
+<style>
+.home {
+  height: 100vh !important;
+  display: flex;
+  flex-flow: column;
+}
+</style>

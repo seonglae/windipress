@@ -54,6 +54,7 @@ const showHero = computed(() => {
   margin: 0rem 0 2.75rem;
   padding: 3rem 1.5rem;
   text-align: center;
+  flex: 1 1 auto;
 }
 
 @media (min-width: 420px) {
@@ -70,14 +71,6 @@ const showHero = computed(() => {
 
 .figure {
   padding: 0 1.5rem;
-}
-
-.image {
-  display: block;
-  margin: 0 auto;
-  width: auto;
-  max-width: 100%;
-  max-height: 280px;
 }
 
 .title {
