@@ -42,7 +42,6 @@ body {
   margin: 0;
   width: 100%;
   min-width: 320px;
-  min-height: 100vh;
   line-height: 1.4;
   font-family: var(--font-family-base);
   font-size: 16px;
@@ -218,7 +217,6 @@ blockquote {
   padding: 0.25rem 0 0.25rem 1rem;
   font-size: 1rem;
   color: var(--c-text);
-  @apply bg-gray-400 bg-opacity-10;
 }
 
 blockquote > p {
@@ -284,20 +282,4 @@ form {
 .external-link {
   font-size: 0.95rem;
   opacity: 0.7;
-}
-
-.icon-btn {
-  @apply inline-block cursor-pointer select-none !outline-none;
-  @apply opacity-75 transition duration-200 ease-in-out align-middle rounded p-2;
-  @apply hover:(opacity-100 bg-gray-400 bg-opacity-10);
-}
-
-.icon-btn.disabled {
-  @apply opacity-25 pointer-events-none;
-}
-
-.inline-icon-btn {
-  @apply text-primary-deep;
-  @apply inline-block rounded p-0.5 text-2xl align-middle;
-  @apply border border-primary border-opacity-20 border-solid;
 }
