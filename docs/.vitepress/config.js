@@ -19,7 +19,7 @@ const slidebars = [
  * @type {import('vitepress').UserConfig}
  */
 module.exports = {
-  title: 'Vitepress WindiCSS Template',
+  title: pkg.displayName,
   description: pkg.description,
   head: [
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],

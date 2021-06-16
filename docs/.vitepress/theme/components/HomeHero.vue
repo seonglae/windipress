@@ -2,8 +2,8 @@
   <header v-if="showHero" class="home-hero flex">
     <div class="mx-auto grid lg:grid-cols-12] gap-4">
       <div class="my-auto pb-40 <md:pb-20">
-        <h1>Vitepress WindiCSS Template</h1>
-        <div class="description">Description of this page</div>
+        <h1>{{ $site.title }}</h1>
+        <div class="description">{{ $site.description }}</div>
 
         <NavLink
           v-if="hasAction"

@@ -1,5 +1,6 @@
 {
   "name": "windipress",
+  "displayName": "WindiPress",
   "description": "Vitepress WindiCSS Template",
   "homepage": "https://vitepress-template.vercel.app",
   "version": "0.1.0",

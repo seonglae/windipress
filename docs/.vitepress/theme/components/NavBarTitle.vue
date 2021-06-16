@@ -9,9 +9,9 @@
       class="logo"
       :src="$withBase($themeConfig.logo)"
       alt="Logo"
-    >
+    />
     <span class="title text-primary-deep">
-      <span class="font-600">Windi</span><span class="font-normal">press</span>
+      <span class="font-600">{{ $site.title }}</span>
     </span>
   </a>
 </template>
@@ -31,7 +31,7 @@
 }
 
 .logo {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
   height: 2.2rem;
   vertical-align: middle;
 }

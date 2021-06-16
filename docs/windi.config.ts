@@ -9,14 +9,14 @@ export default defineConfig({
   },
   attributify: true,
   shortcuts: {
-    'bg-main': 'bg-white dark:bg-[#111]',
+    'bg-main': 'bg-white dark:bg-[#121919]',
   },
   theme: {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#3AB9D4',
-          deep: '#2082A6',
+          DEFAULT: '#424242',
+          deep: '#242424',
         },
       },
       fontFamily: {
