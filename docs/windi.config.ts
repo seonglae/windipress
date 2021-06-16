@@ -9,7 +9,7 @@ export default defineConfig({
   },
   attributify: true,
   shortcuts: {
-    'bg-main': 'bg-white dark:bg-[#121919]',
+    'bg-main': 'bg-white dark:bg-[#111]',
   },
   theme: {
     extend: {

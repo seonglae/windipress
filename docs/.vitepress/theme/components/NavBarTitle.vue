@@ -10,7 +10,7 @@
       :src="$withBase($themeConfig.logo)"
       alt="Logo"
     />
-    <span class="title text-primary-deep">
+    <span class="title">
       <span class="font-600">{{ $site.title }}</span>
     </span>
   </a>
