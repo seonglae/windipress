@@ -10,11 +10,10 @@
   "license": "MIT",
   "scripts": {
     "docs": "vitepress dev docs --port 8888",
-    "docs:build": "esno ./scripts/docs.ts"
+    "build": "esno ./scripts/docs.ts"
   },
   "devDependencies": {
     "@types/node": "^15.0.2",
-    "pnpm": "^6.2.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "typescript": "^4.2.4",
