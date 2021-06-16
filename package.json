@@ -8,7 +8,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "docs": "vitepress dev docs",
+    "docs": "vitepress dev docs --port 8888",
     "docs:build": "esno ./scripts/docs.ts"
   },
   "devDependencies": {
