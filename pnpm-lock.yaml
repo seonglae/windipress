@@ -9,7 +9,6 @@ specifiers:
   '@vueuse/core': ^4.9.1
   esno: ^0.5.0
   execa: ^5.0.0
-  pnpm: ^6.2.5
   prism-theme-vars: ^0.2.2
   react: ^17.0.2
   react-dom: ^17.0.2
@@ -36,7 +35,6 @@ dependencies:
 
 devDependencies:
   '@types/node': 15.0.2
-  pnpm: 6.2.5
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
   typescript: 4.2.4
@@ -1176,12 +1174,6 @@ packages:
   /picomatch/2.2.3:
     resolution: {integrity: sha512-KpELjfwcCDUb9PeigTs2mBJzXUPzAuP2oPcA989He8Rte0+YUAjw1JVedDhuTKPkHjSYzMN3npC9luThGYEKdg==}
     engines: {node: '>=8.6'}
-
-  /pnpm/6.2.5:
-    resolution: {integrity: sha512-klFrPM3JDo+LFA2f7Ih3wnH296ZDDqfFx5BCc3ADZV6zRQFscEL8XIU8jDqsHFv7EZHLP9Z12fzY/HyHca/duw==}
-    engines: {node: '>=12.17'}
-    hasBin: true
-    dev: true
 
   /polka/0.5.2:
     resolution: {integrity: sha512-FVg3vDmCqP80tOrs+OeNlgXYmFppTXdjD5E7I4ET1NjvtNmQrb1/mJibybKkb/d4NA7YWAr1ojxuhpL3FHqdlw==}
