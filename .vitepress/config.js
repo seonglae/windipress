@@ -1,5 +1,5 @@
 // @ts-check
-const pkg = require('../../package.json')
+const pkg = require('../package.json')
 
 const Docs = [
   {
@@ -22,7 +22,7 @@ module.exports = {
   title: pkg.displayName,
   description: pkg.description,
   head: [
-    ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
+    ['link', { rel: 'icon', type: 'image/png', href: '/logo.svg' }],
     ['meta', { name: 'author', content: 'Seonglae Cho' }],
     ['meta', { property: 'og:title', content: 'Vitepress' }],
     ['meta', { property: 'og:image', content: `${pkg.homepage}/og-image.png` }],
@@ -53,7 +53,6 @@ module.exports = {
   themeConfig: {
     repo: 'seonglae/windipress',
     logo: '/logo.svg',
-    docsDir: 'docs',
     docsBranch: 'release',
     editLinks: true,
     editLinkText: 'Suggest changes to this page',

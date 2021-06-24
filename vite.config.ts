@@ -12,7 +12,7 @@ const config: UserConfig = {
       '@vueuse/core',
     ],
   },
-  publicDir: resolve(__dirname, '../assets'),
+  publicDir: resolve(__dirname, './assets'),
   server: {
     hmr: {
       overlay: false,
