@@ -22,7 +22,7 @@ module.exports = {
   title: pkg.displayName,
   description: pkg.description,
   head: [
-    ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
+    ['link', { rel: 'icon', type: 'image/png', href: '/logo.svg' }],
     ['meta', { name: 'author', content: 'Seonglae Cho' }],
     ['meta', { property: 'og:title', content: 'Vitepress' }],
     ['meta', { property: 'og:image', content: `${pkg.homepage}/og-image.png` }],
