@@ -2,7 +2,7 @@ import { computed, Ref } from 'vue-demi'
 import { useRoute } from 'vitepress'
 import type { DefaultTheme } from '../config'
 import { isExternal as isExternalCheck } from '../utils'
-import { useUrl } from '../composables/url'
+import { useUrl } from './url'
 
 export function useNavLink(item: Ref<DefaultTheme.NavItemWithLink>) {
   const route = useRoute()

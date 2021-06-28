@@ -1,5 +1,5 @@
 // @ts-check
-const pkg = require('../../package.json')
+const pkg = require('../package.json')
 
 const Docs = [
   {
@@ -53,7 +53,6 @@ module.exports = {
   themeConfig: {
     repo: 'seonglae/windipress',
     logo: '/logo.svg',
-    docsDir: 'docs',
     docsBranch: 'release',
     editLinks: true,
     editLinkText: 'Suggest changes to this page',

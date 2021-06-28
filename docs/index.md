@@ -1,8 +1,3 @@
----
-home: true
-heroImage: /logo.png
-actionText: Get Started
-actionLink: /docs/
+# Getting Started
 
-footer: MIT Licensed | Copyright © 2021-PRESENT Seonglae Cho
----
+## Overview

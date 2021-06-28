@@ -91,7 +91,7 @@ const showHero = computed(() => {
 }
 
 .description {
-  margin: 0;
+  margin-top: 0.2rem;
   line-height: 1.3;
   font-size: 1.2rem;
   color: var(--c-text-light);
@@ -104,7 +104,7 @@ const showHero = computed(() => {
 
 @media (min-width: 420px) {
   .action {
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: inline-block;
   }
 }
