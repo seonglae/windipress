@@ -26,7 +26,7 @@
 
 @media (min-width: 420px) {
   .container {
-    padding: 3rem 1.5rem 3.25rem;
+    padding: 0rem 1.5rem 2.25rem;
   }
 }
 
@@ -34,7 +34,7 @@
   margin: 0;
   text-align: center;
   line-height: 1.4;
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: var(--c-text-light);
 }
 </style>

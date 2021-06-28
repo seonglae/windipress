@@ -3,16 +3,12 @@
     <div class="edit">
       <EditLink />
     </div>
-    <!-- <div class="updated">
-      <LastUpdated />
-    </div> -->
   </footer>
 </template>
 
 <script setup lang="ts">
 import { defineComponent } from 'vue'
 import EditLink from './EditLink.vue'
-import LastUpdated from './LastUpdated.vue'
 </script>
 
 <style scoped>
