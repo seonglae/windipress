@@ -1,4 +1,4 @@
-# Vitepress Template 
+# Vitepress + WindiCSS 
 This project is fork of **Anthony Fu**'s [Slidev](https://github.com/slidevjs/docs) minimal and simplified version
 
 I made this for pretty and light document project
