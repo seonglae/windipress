@@ -10,6 +10,13 @@ I made this for pretty and light document project
 - Markdown based
 
 
+## Get started
+1. Change package.json config
+2. Write some markdowns
+3. Apply to .vitepress/config.js
+4. (optional) change assets/logo.svg
+
+
 ## Built with Windipress
 - [Intuiter Document](https://intuiter.seongland.com)
 - [2Spotify Document](https://2spotify.seongland.com)
