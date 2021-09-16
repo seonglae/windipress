@@ -11,10 +11,10 @@ I made this for pretty and light document project
 
 
 ## Get started
-1. Change package.json config
+1. Change `package.json` config
 2. Write some markdowns
-3. Apply to .vitepress/config.js
-4. (optional) change assets/logo.svg
+3. Apply to `.vitepress/config.js`
+4. (optional) change `assets/logo.svg`
 
 
 ## Built with Windipress
