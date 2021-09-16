@@ -1,7 +1,14 @@
 # Vitepress Template 
-This project is fork of **Anthony Fu**'s [Slidev](https://github.com/slidevjs/docs)
-This is minimal and simplified version of slidev document pages
+This project is fork of **Anthony Fu**'s [Slidev](https://github.com/slidevjs/docs) minimal and simplified version
+
 I made this for pretty and light document project
+
+## Features
+- Simple Configuration
+- Modern UI
+- Customizable
+- Markdown based
+
 
 ## Built with Windipress
 - [Intuiter Document](https://intuiter.seongland.com)
