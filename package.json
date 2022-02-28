@@ -5,7 +5,7 @@
   "homepage": "https://vitepress-template.vercel.app",
   "version": "0.1.0",
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=v16.14.0"
   },
   "license": "MIT",
   "scripts": {
@@ -13,7 +13,7 @@
     "build": "esno ./scripts/docs.ts"
   },
   "devDependencies": {
-    "@types/node": "^15.0.2",
+    "@types/node": "^16.11.26",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "typescript": "^4.2.4",
