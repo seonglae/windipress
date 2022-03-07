@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@docsearch/css': ^1.0.0-alpha.22
+  '@docsearch/css': ^3.0.0
   '@docsearch/js': ^1.0.0-alpha.22
   '@docsearch/react': ^1.0.0-alpha.14
   '@iconify/json': ^1.1.339
@@ -22,7 +22,7 @@ specifiers:
   vue-demi: ^0.9.0
 
 dependencies:
-  '@docsearch/css': 1.0.0-alpha.22
+  '@docsearch/css': 3.0.0
   '@docsearch/js': 1.0.0-alpha.22_react-dom@17.0.2+react@17.0.2
   '@docsearch/react': 1.0.0-alpha.14_react-dom@17.0.2+react@17.0.2
   '@iconify/json': 1.1.339
@@ -155,12 +155,12 @@ packages:
       '@babel/helper-validator-identifier': 7.14.0
       to-fast-properties: 2.0.0
 
-  /@docsearch/css/1.0.0-alpha.22:
-    resolution: {integrity: sha512-bWD7Dq/H2i1vWXgrGNlqPwmeEYvtPGCotFu2gSv+czNKzkWNB2A1Z3we7+ggy+rZBWN/yQA+D+wYBcrWRfpFMw==}
-    dev: false
-
   /@docsearch/css/1.0.0-alpha.28:
     resolution: {integrity: sha512-1AhRzVdAkrWwhaxTX6/R7SnFHz8yLz1W8I/AldlTrfbNvZs9INk1FZiEFTJdgHaP68nhgQNWSGlQiDiI3y2RYg==}
+    dev: false
+
+  /@docsearch/css/3.0.0:
+    resolution: {integrity: sha512-1kkV7tkAsiuEd0shunYRByKJe3xQDG2q7wYg24SOw1nV9/2lwEd4WrUYRJC/ukGTl2/kHeFxsaUvtiOy0y6fFA==}
     dev: false
 
   /@docsearch/js/1.0.0-alpha.22_react-dom@17.0.2+react@17.0.2:
@@ -526,6 +526,7 @@ packages:
 
   /clipboard/2.0.8:
     resolution: {integrity: sha512-Y6WO0unAIQp5bLmk1zdThRhgJt/x3ks6f30s3oE3H1mgIEU33XyQjEf8gsf6DxC7NPX8Y1SsNWjUjL/ywLnnbQ==}
+    requiresBuild: true
     dependencies:
       good-listener: 1.2.2
       select: 1.1.2
@@ -757,6 +758,7 @@ packages:
     resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
+    requiresBuild: true
     optional: true
 
   /function-bind/1.1.1:
