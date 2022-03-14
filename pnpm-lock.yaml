@@ -3,7 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@docsearch/css': ^3.0.0
   '@docsearch/js': ^3.0.0
-  '@docsearch/react': ^1.0.0-alpha.14
+  '@docsearch/react': ^3.0.0
   '@iconify/json': ^1.1.339
   '@types/node': ^15.0.2
   '@vueuse/core': ^4.9.1
@@ -24,7 +24,7 @@ specifiers:
 dependencies:
   '@docsearch/css': 3.0.0
   '@docsearch/js': 3.0.0_react-dom@17.0.2+react@17.0.2
-  '@docsearch/react': 1.0.0-alpha.14_react-dom@17.0.2+react@17.0.2
+  '@docsearch/react': 3.0.0_react-dom@17.0.2+react@17.0.2
   '@iconify/json': 1.1.339
   '@vueuse/core': 4.9.1_vue@3.0.11
   esno: 0.5.0
@@ -203,19 +203,6 @@ packages:
       - '@types/react'
       - react
       - react-dom
-    dev: false
-
-  /@docsearch/react/1.0.0-alpha.14_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-I+JrJKZlRZIiIVefIY9AkC9OQegHfUCkdHmqGqsMu6suF+VtQNoTMCN0joAvMx4wid54RafWa/UnlEwEPMf5/w==}
-    peerDependencies:
-      react: ^16.8.0
-      react-dom: ^16.8.0
-    dependencies:
-      '@francoischalifour/autocomplete-core': 1.0.0-alpha.28
-      '@francoischalifour/autocomplete-preset-algolia': 1.0.0-alpha.28
-      algoliasearch: 4.9.1
-      react: 17.0.2
-      react-dom: 17.0.2_react@17.0.2
     dev: false
 
   /@docsearch/react/1.0.0-alpha.28_react-dom@17.0.2+react@17.0.2:
