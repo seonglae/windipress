@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@docsearch/css': ^3.0.0
-  '@docsearch/js': ^1.0.0-alpha.22
+  '@docsearch/js': ^3.0.0
   '@docsearch/react': ^1.0.0-alpha.14
   '@iconify/json': ^1.1.339
   '@types/node': ^15.0.2
@@ -23,7 +23,7 @@ specifiers:
 
 dependencies:
   '@docsearch/css': 3.0.0
-  '@docsearch/js': 1.0.0-alpha.22_react-dom@17.0.2+react@17.0.2
+  '@docsearch/js': 3.0.0_react-dom@17.0.2+react@17.0.2
   '@docsearch/react': 1.0.0-alpha.14_react-dom@17.0.2+react@17.0.2
   '@iconify/json': 1.1.339
   '@vueuse/core': 4.9.1_vue@3.0.11
@@ -45,6 +45,26 @@ devDependencies:
   vue: 3.0.11
 
 packages:
+
+  /@algolia/autocomplete-core/1.5.2:
+    resolution: {integrity: sha512-DY0bhyczFSS1b/CqJlTE/nQRtnTAHl6IemIkBy0nEWnhDzRDdtdx4p5Uuk3vwAFxwEEgi1WqKwgSSMx6DpNL4A==}
+    dependencies:
+      '@algolia/autocomplete-shared': 1.5.2
+    dev: false
+
+  /@algolia/autocomplete-preset-algolia/1.5.2_algoliasearch@4.9.1:
+    resolution: {integrity: sha512-3MRYnYQFJyovANzSX2CToS6/5cfVjbLLqFsZTKcvF3abhQzxbqwwaMBlJtt620uBUOeMzhdfasKhCc40+RHiZw==}
+    peerDependencies:
+      '@algolia/client-search': ^4.9.1
+      algoliasearch: ^4.9.1
+    dependencies:
+      '@algolia/autocomplete-shared': 1.5.2
+      algoliasearch: 4.9.1
+    dev: false
+
+  /@algolia/autocomplete-shared/1.5.2:
+    resolution: {integrity: sha512-ylQAYv5H0YKMfHgVWX0j0NmL8XBcAeeeVQUmppnnMtzDbDnca6CzhKj3Q8eF9cHCgcdTDdb5K+3aKyGWA0obug==}
+    dev: false
 
   /@algolia/cache-browser-local-storage/4.9.1:
     resolution: {integrity: sha512-bAUU9vKCy45uTTlzJw0LYu1IjoZsmzL6lgjaVFaW1crhX/4P+JD5ReQv3n/wpiXSFaHq1WEO3WyH2g3ymzeipQ==}
@@ -163,8 +183,8 @@ packages:
     resolution: {integrity: sha512-1kkV7tkAsiuEd0shunYRByKJe3xQDG2q7wYg24SOw1nV9/2lwEd4WrUYRJC/ukGTl2/kHeFxsaUvtiOy0y6fFA==}
     dev: false
 
-  /@docsearch/js/1.0.0-alpha.22_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-6t+9tWSuqvQTb9s9YqEfKkOFzV/paRq07ZZOuT/6/KRYMJoUeQ6zgn9/14un2cJpV5W3gf/sgvmPVVehAPP6xw==}
+  /@docsearch/js/1.0.0-alpha.28_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-2g7aPhBy7FoEyeZW2G3LYHWVa8CFvqyozEz8PXt3hyywdFcmEIqmoCRwn8kboVftrOKCjtPcuLCewsaBoB3uiw==}
     dependencies:
       '@docsearch/react': 1.0.0-alpha.28_react-dom@17.0.2+react@17.0.2
       preact: 10.5.13
@@ -173,12 +193,14 @@ packages:
       - react-dom
     dev: false
 
-  /@docsearch/js/1.0.0-alpha.28_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-2g7aPhBy7FoEyeZW2G3LYHWVa8CFvqyozEz8PXt3hyywdFcmEIqmoCRwn8kboVftrOKCjtPcuLCewsaBoB3uiw==}
+  /@docsearch/js/3.0.0_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-j3tUJWlgW3slYqzGB8fm7y05kh2qqrIK1dZOXHeMUm/5gdKE85fiz/ltfCPMDFb/MXF+bLZChJXSMzqY0Ck30Q==}
     dependencies:
-      '@docsearch/react': 1.0.0-alpha.28_react-dom@17.0.2+react@17.0.2
+      '@docsearch/react': 3.0.0_react-dom@17.0.2+react@17.0.2
       preact: 10.5.13
     transitivePeerDependencies:
+      - '@algolia/client-search'
+      - '@types/react'
       - react
       - react-dom
     dev: false
@@ -208,6 +230,23 @@ packages:
       algoliasearch: 4.9.1
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
+    dev: false
+
+  /@docsearch/react/3.0.0_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-yhMacqS6TVQYoBh/o603zszIb5Bl8MIXuOc6Vy617I74pirisDzzcNh0NEaYQt50fVVR3khUbeEhUEWEWipESg==}
+    peerDependencies:
+      '@types/react': '>= 16.8.0 < 18.0.0'
+      react: '>= 16.8.0 < 18.0.0'
+      react-dom: '>= 16.8.0 < 18.0.0'
+    dependencies:
+      '@algolia/autocomplete-core': 1.5.2
+      '@algolia/autocomplete-preset-algolia': 1.5.2_algoliasearch@4.9.1
+      '@docsearch/css': 3.0.0
+      algoliasearch: 4.9.1
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    transitivePeerDependencies:
+      - '@algolia/client-search'
     dev: false
 
   /@francoischalifour/autocomplete-core/1.0.0-alpha.28:
