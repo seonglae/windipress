@@ -4,7 +4,7 @@ specifiers:
   '@docsearch/css': ^3.0.0
   '@docsearch/js': ^3.0.0
   '@docsearch/react': ^3.0.0
-  '@iconify/json': ^1.1.339
+  '@iconify/json': ^2.1.20
   '@types/node': ^15.0.2
   '@vueuse/core': ^4.9.1
   esno: ^0.5.0
@@ -25,7 +25,7 @@ dependencies:
   '@docsearch/css': 3.0.0
   '@docsearch/js': 3.0.0_react-dom@17.0.2+react@17.0.2
   '@docsearch/react': 3.0.0_react-dom@17.0.2+react@17.0.2
-  '@iconify/json': 1.1.339
+  '@iconify/json': 2.1.20
   '@vueuse/core': 4.9.1_vue@3.0.11
   esno: 0.5.0
   execa: 5.0.0
@@ -40,7 +40,7 @@ devDependencies:
   typescript: 4.2.4
   vite: 2.2.4
   vite-plugin-components: 0.9.0_vite@2.2.4
-  vite-plugin-icons: 0.5.0_@iconify+json@1.1.339
+  vite-plugin-icons: 0.5.0_@iconify+json@2.1.20
   vite-plugin-windicss: 0.16.0-beta.14_vite@2.2.4
   vue: 3.0.11
 
@@ -248,8 +248,15 @@ packages:
     resolution: {integrity: sha512-LFelJDOLZ6JHlmlAkgrvmcu4hpNPB91KYcr4f60D/exzU1eNOb4/KCVHIydGHIQFaOacIOD+Xy+B7P1z812cZg==}
     dev: true
 
-  /@iconify/json/1.1.339:
-    resolution: {integrity: sha512-nMpcK5945sksa5za3PnpC4afIfzKCBTTULcux/qUJ8I3lCA5kO4U//8eSZ0NpXvybLZluomxs8aM2Yxy4cBHgA==}
+  /@iconify/json/2.1.20:
+    resolution: {integrity: sha512-UIxSAbo5e2s/p6jkIFgNR2Je6DpJdO5WOdqYmuxx3Je0r4BVXq6+UJ+t49OsB1AlKzSZscHQ4tvFLrXIWvWCyA==}
+    dependencies:
+      '@iconify/types': 1.1.0
+      pathe: 0.0.2
+    dev: false
+
+  /@iconify/types/1.1.0:
+    resolution: {integrity: sha512-Jh0llaK2LRXQoYsorIH8maClebsnzTcve+7U3rQUSnC11X4jtPnFuyatqFLvMxZ8MLG8dB4zfHsbPfuvxluONw==}
     dev: false
 
   /@nodelib/fs.scandir/2.1.4:
@@ -1199,6 +1206,10 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
+  /pathe/0.0.2:
+    resolution: {integrity: sha512-mmK20YtPb4yXHlaPuOD/uPIpRu7iIK45GA/GiRSlNpIdfWDG5aEQmFT1HHtBmJB+t/6DvFOtOsEipsPA8Bx2cw==}
+    dev: false
+
   /picomatch/2.2.3:
     resolution: {integrity: sha512-KpELjfwcCDUb9PeigTs2mBJzXUPzAuP2oPcA989He8Rte0+YUAjw1JVedDhuTKPkHjSYzMN3npC9luThGYEKdg==}
     engines: {node: '>=8.6'}
@@ -1556,14 +1567,14 @@ packages:
       - supports-color
     dev: true
 
-  /vite-plugin-icons/0.5.0_@iconify+json@1.1.339:
+  /vite-plugin-icons/0.5.0_@iconify+json@2.1.20:
     resolution: {integrity: sha512-YsnoYixkp0HVIx6SvQWTyXXiWBCfc9gtKx3iqyPmN4fsE5hf7NvPp1LKiIazilP+zRUvHEyNeEbH4y6wUX8jMw==}
     peerDependencies:
       '@iconify/json': '*'
       '@vue/compiler-sfc': ^3.0.2
       vue-template-compiler: ^2.6.12
     dependencies:
-      '@iconify/json': 1.1.339
+      '@iconify/json': 2.1.20
       '@iconify/json-tools': 1.0.10
       vue-template-es2015-compiler: 1.9.1
     dev: true
