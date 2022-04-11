@@ -6,7 +6,7 @@ specifiers:
   '@docsearch/react': ^3.0.0
   '@iconify/json': ^1.1.339
   '@types/node': ^15.0.2
-  '@vueuse/core': ^4.9.1
+  '@vueuse/core': ^8.2.5
   esno: ^0.5.0
   execa: ^5.0.0
   prism-theme-vars: ^0.2.2
@@ -26,7 +26,7 @@ dependencies:
   '@docsearch/js': 3.0.0_react-dom@17.0.2+react@17.0.2
   '@docsearch/react': 3.0.0_react-dom@17.0.2+react@17.0.2
   '@iconify/json': 1.1.339
-  '@vueuse/core': 4.9.1_vue@3.0.11
+  '@vueuse/core': 8.2.5_vue@3.0.11
   esno: 0.5.0
   execa: 5.0.0
   prism-theme-vars: 0.2.2
@@ -368,23 +368,40 @@ packages:
   /@vue/shared/3.0.11:
     resolution: {integrity: sha512-b+zB8A2so8eCE0JsxjL24J7vdGl8rzPQ09hZNhystm+KqSbKcAej1A+Hbva1rCMmTTqA+hFnUSDc5kouEo0JzA==}
 
-  /@vueuse/core/4.9.1_vue@3.0.11:
-    resolution: {integrity: sha512-BmmEEaistQqNsGlmmpwS2fRkzpf/2riBnUAmm4uDOj4ZDUpssCvCyTeOoIGbZYg92Hzaz0YF9qSeE7megjYLCg==}
+  /@vueuse/core/8.2.5_vue@3.0.11:
+    resolution: {integrity: sha512-5prZAA1Ji2ltwNUnzreu6WIXYqHYP/9U2BiY5mD/650VYLpVcwVlYznJDFcLCmEWI3o3Vd34oS1FUf+6Mh68GQ==}
+    peerDependencies:
+      '@vue/composition-api': ^1.1.0
+      vue: ^2.6.0 || ^3.2.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      vue:
+        optional: true
     dependencies:
-      '@vueuse/shared': 4.9.1_vue@3.0.11
-      vue-demi: 0.7.5_vue@3.0.11
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - vue
+      '@vueuse/metadata': 8.2.5
+      '@vueuse/shared': 8.2.5_vue@3.0.11
+      vue: 3.0.11
+      vue-demi: 0.9.0_vue@3.0.11
     dev: false
 
-  /@vueuse/shared/4.9.1_vue@3.0.11:
-    resolution: {integrity: sha512-5jj+/Ve7e82LP4OFpU8jBRhjC7QGUxI95U2m4bB2BGuWA8v6r2EVV7AVkU/rXZ5EvRoYkAnUs8jWRCj0QlD6XQ==}
+  /@vueuse/metadata/8.2.5:
+    resolution: {integrity: sha512-Lk9plJjh9cIdiRdcj16dau+2LANxIdFCiTgdfzwYXbflxq0QnMBeOD2qHgKDE7fuVrtPcVWj8VSuZEx1HRfNQA==}
+    dev: false
+
+  /@vueuse/shared/8.2.5_vue@3.0.11:
+    resolution: {integrity: sha512-lNWo+7sk6JCuOj4AiYM+6HZ6fq4xAuVq1sVckMQKgfCJZpZRe4i8es+ZULO5bYTKP+VrOCtqrLR2GzEfrbr3YQ==}
+    peerDependencies:
+      '@vue/composition-api': ^1.1.0
+      vue: ^2.6.0 || ^3.2.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      vue:
+        optional: true
     dependencies:
-      vue-demi: 0.7.5_vue@3.0.11
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - vue
+      vue: 3.0.11
+      vue-demi: 0.9.0_vue@3.0.11
     dev: false
 
   /@windicss/plugin-utils/0.16.0-beta.14:
@@ -1643,20 +1660,6 @@ packages:
       - react
       - react-dom
       - supports-color
-    dev: false
-
-  /vue-demi/0.7.5_vue@3.0.11:
-    resolution: {integrity: sha512-eFSQSvbQdY7C9ujOzvM6tn7XxwLjn0VQDXQsiYBLBwf28Na+2nTQR4BBBcomhmdP6mmHlBKAwarq6a0BPG87hQ==}
-    hasBin: true
-    requiresBuild: true
-    peerDependencies:
-      '@vue/composition-api': ^1.0.0-beta.1
-      vue: ^2.6.0 || >=3.0.0-rc.1
-    peerDependenciesMeta:
-      '@vue/composition-api':
-        optional: true
-    dependencies:
-      vue: 3.0.11
     dev: false
 
   /vue-demi/0.9.0_vue@3.0.11:
