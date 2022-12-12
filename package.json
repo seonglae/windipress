@@ -13,26 +13,26 @@
     "build": "esno ./scripts/docs.ts"
   },
   "devDependencies": {
-    "@types/node": "^18.11.9",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "typescript": "^4.2.4",
-    "vue": "^3.0.11",
-    "vite": "^2.2.4",
-    "vite-plugin-components": "^0.9.0",
-    "vite-plugin-icons": "^0.5.0",
-    "vite-plugin-windicss": "^0.16.0-beta.14"
+    "@types/node": "^18.11.13",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.9.4",
+    "vue": "^3.2.45",
+    "vite": "^2.9.15",
+    "vite-plugin-components": "^0.13.3",
+    "vite-plugin-icons": "^0.6.5",
+    "vite-plugin-windicss": "^0.17.1"
   },
   "dependencies": {
-    "@docsearch/css": "^3.0.0",
-    "@docsearch/js": "^3.0.0",
-    "@docsearch/react": "^3.0.0",
-    "@iconify/json": "^1.1.339",
-    "@vueuse/core": "^4.9.1",
-    "esno": "^0.5.0",
-    "execa": "^5.0.0",
-    "prism-theme-vars": "^0.2.2",
-    "vitepress": "^0.13.2",
-    "vue-demi": "^0.9.0"
+    "@docsearch/css": "^3.3.0",
+    "@docsearch/js": "^3.3.0",
+    "@docsearch/react": "^3.3.0",
+    "@iconify/json": "^1.1.461",
+    "@vueuse/core": "^4.11.2",
+    "esno": "^0.16.3",
+    "execa": "^5.1.1",
+    "prism-theme-vars": "^0.2.4",
+    "vitepress": "^0.22.4",
+    "vue-demi": "^0.13.11"
   }
 }
